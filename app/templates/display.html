@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Dance Classes</title>
+    </head>
+    <body>
+      <h1>Dance Classes</h1>
+<div class="event-list">
+  <ul>
+    {% for event in events %}
+      <li>{{ event.starttime }} - {{ event.level }} - {{ event.address }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+</html>

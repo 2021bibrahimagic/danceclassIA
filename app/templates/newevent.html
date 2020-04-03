@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Dance Classes</title>
+    </head>
+    <body>
+      <h1>Dance Classes</h1>
+<!--
+      <h2> Where do you want the class to be? </h2> -->
+      <!-- <button><a href="/Manhattan">Manhattan</a></button> -->
+
+
+      <!-- need to add a method (post) and an action (results) -->
+      <form method = "post" action = "/newevent">
+        <p> How many people can sign up for this event?</p>
+        <input type = "text" name = "number" />
+        <p> What is the date of the class?</p>
+        <input type = "date" name = "date" />
+        <p> Tell me what time does the class start?</p>
+        <input type = "text" name = "starttime" />
+        <p> Tell me what time does the class end?</p>
+        <input type = "text" name = "endtime" />
+        <p> What is the address of the dance class?</p>
+        <input type = "text" name = "address" />
+        <p> What is the dance level of this class?</p>
+        <input type = "text" name = "level" />
+        <br>
+        <!-- add another category called category -->
+        <p>Tell me the location you want your classes in</p>
+        <input type = "radio" name = "category" value = "Manhattan">Manhattan <br>
+        <input type = "radio" name = "category" value = "Brooklyn">Brooklyn <br>
+        <input type = "radio" name = "category" value = "Queens">Queens <br>
+        <input type = "radio" name = "category" value = "The_Bronx">The Bronx <br>
+        <input type = "radio" name = "category" value = "Staten_Island">Staten Island <br>
+        <br>
+
+
+        <input type = "submit" vale = "submit"/>
+      </form>
+
+
+</html>

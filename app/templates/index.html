@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Dance Classes</title>
+    </head>
+    <body>
+      <h1>Dance Classes</h1>
+<!--
+      <h2> Where do you want the class to be? </h2> -->
+      <!-- <button><a href="/Manhattan">Manhattan</a></button> -->
+
+
+      <!-- need to add a method (post) and an action (results) -->
+      <form method = "post" action = "/results">
+        <p> Tell me what date you want to join a class!</p>
+        <input type = "text" name = "event_date" />
+        <p> Tell me what time you want to take the class!</p>
+        <input type = "text" name = "event_time" />
+        <br>
+        <!-- add another category called category -->
+        <p>Tell me the borough you want your classes in</p>
+        <input type = "radio" name = "category" value = "Manhattan">Manhattan <br>
+        <input type = "radio" name = "category" value = "Brooklyn">Brooklyn <br>
+        <input type = "radio" name = "category" value = "Queens">Queens <br>
+        <input type = "radio" name = "category" value = "The_Bronx">The Bronx <br>
+        <input type = "radio" name = "category" value = "Staten_Island">Staten Island <br>
+        <br>
+        <input type = "submit" value = "submit">
+
+        <p>You are logged in as {{ session['username'] }}< a href= "/logout">Logout</a></p>
+
+        
+
+        </form>
+</html>
